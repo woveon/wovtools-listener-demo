@@ -1,0 +1,9 @@
+{
+  "name": "wovtools-listener-demo",
+  "version": "1.0.0",
+  "description": "Modified example from expressjs webpage, used for WovTools demo.",
+  "main": "index.js",
+  "author": "Chad Wingrave",
+  "license": "Apache-2.0",
+  "private": false
+}
