@@ -1,7 +1,7 @@
 {
-  "name": "wovtools-listener-demo",
+  "name": "wtdl",
   "version": "1.0.0",
-  "description": "Modified example from expressjs webpage, used for WovTools demo.",
+  "description": "WovTool demo using the listener service from the ExpressJS webpage.",
   "main": "index.js",
   "author": "Chad Wingrave",
   "license": "Apache-2.0",

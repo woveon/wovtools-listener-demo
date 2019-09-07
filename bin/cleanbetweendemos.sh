@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-DIR=~/code/wovtools-demo-listener
+DIR=~/code/wtdl
 ME=cw
 
 rm ~/.wovtools
@@ -27,7 +27,7 @@ git -C ${DIR}_dba.git init --bare
 git remote set-url origin ${DIR}_test.git
 
 # Change it back with
-# git remote set-url origin git@github.com:woveon/wovtools-listener-demo.git
+# git remote set-url origin git@github.com:woveon/wtdl.git
 
 kubectl delete namespace wtd-${ME}
 kubectl delete namespace wtd-dev
