@@ -4,10 +4,10 @@
 DIR=~/code/wtdl
 ME=cw
 
-rm ~/.wovtools
+rm -f ~/.wovtools
 rm -Rf ~/.wovtools_secrets
 rm -Rf ${DIR}/wovtools
-rm ${DIR}/src/wtdlconfig.sh
+rm -f ${DIR}/src/wtdlconfig.sh
 
 rm -Rf ${DIR}_test.git
 rm -Rf ${DIR}_dba.git
@@ -29,7 +29,7 @@ git remote set-url origin ${DIR}_test.git
 # Change it back with
 # git remote set-url origin git@github.com:woveon/wtdl.git
 
-kubectl delete namespace wtd-${ME}
-kubectl delete namespace wtd-dev
-kubectl delete context wov-aws-va-grape-wtd-${ME}
-kubectl delete context wov-aws-va-grape-wtd-dev
+kubectl delete namespace wtd-${ME}   2> /dev/null
+kubectl delete namespace wtd-dev   2> /dev/null
+kubectl delete context wov-aws-va-grape-wtd-${ME}   2> /dev/null
+kubectl delete context wov-aws-va-grape-wtd-dev   2> /dev/null
