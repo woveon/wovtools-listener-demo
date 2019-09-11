@@ -39,4 +39,4 @@ kubectl delete context wov-aws-va-grape-wtd-${ME}   2> /dev/null
 kubectl delete context wov-aws-va-grape-wtd-dev   2> /dev/null
 
 echo "...delete any AWS ECR container repos"
-aws ecr delete-repository --force --repository-name wtd/wtdl
+aws ecr delete-repository --force --repository-name wtd/wtdl 2> /dev/null
